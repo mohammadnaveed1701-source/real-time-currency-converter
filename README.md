@@ -1,30 +1,33 @@
 # real-time-currency-converter
-💱 Currency Converter
+💱 Real-Time Currency Converter
 
-A responsive Currency Converter web application that converts amounts between multiple international currencies using real-time exchange rates. The project demonstrates frontend development skills, asynchronous JavaScript, API integration, and dynamic UI updates.
+A responsive Real-Time Currency Converter web application that converts amounts between multiple international currencies using live exchange rates.
+This project demonstrates frontend development, asynchronous JavaScript, public API integration, and dynamic UI updates.
 
 📌 Project Overview
 
-This application allows users to convert currency values by selecting source and target currencies from dynamically populated dropdowns. Exchange rates are fetched in real time from a public currency API, and corresponding country flags update automatically based on currency selection.
+The application allows users to convert currency values by selecting source and target currencies from dynamically populated dropdowns.
+Exchange rates are fetched in real time from a public currency exchange API, and corresponding country flags update automatically based on currency selection.
 
-The project is designed as a practical frontend portfolio project suitable for resumes and technical interviews.
+This project is designed as a frontend portfolio project suitable for resumes, internships, and technical interviews.
 
 🚀 Features
 
 Real-time currency conversion
-Supports a wide range of global currencies
-Dynamic dropdown population using JavaScript
+Supports multiple global currencies
+Dynamic currency dropdown generation
 Automatic country flag updates
 Input validation for currency amount
 Clean, responsive, and user-friendly UI
+Default conversion on page load
 
 🧠 How It Works
 
 Currency dropdowns are populated dynamically using a currency–country mapping (codes.js)
-On selection change, country flags update automatically
-Exchange rates are fetched asynchronously from a public API
-Converted value is calculated and displayed instantly
-Default conversion loads on page refresh
+When a currency selection changes, the country flag updates automatically
+Exchange rates are fetched asynchronously from a public API using JavaScript fetch()
+The converted value is calculated on the client side
+Results are displayed instantly without page reload
 
 🛠️ Tech Stack
 
@@ -34,14 +37,41 @@ JavaScript (ES6) – Logic, API handling, DOM manipulation
 Font Awesome – Icons
 Currency Exchange API – Live exchange rate data
 
+🔌 API Usage
+
+This project uses a public currency exchange API to retrieve real-time exchange rates.
+
+Endpoint
+GET https://api.exchangerate-api.com/v4/latest/{BASE_CURRENCY}
+
+Example Request
+GET https://api.exchangerate-api.com/v4/latest/USD
+
+Sample Response
+{
+  "base": "USD",
+  "rates": {
+    "INR": 83.12,
+    "EUR": 0.92,
+    "JPY": 148.34
+  }
+}
+
+API Integration Notes
+
+Data is fetched asynchronously using fetch()
+No backend server is required
+Converted amount is calculated on the client side
+API errors are handled gracefully
+
 🌍 Supported Currencies
 
 The application supports multiple international currencies using a predefined mapping of currency codes to country codes.
-This mapping enables:
+This enables:
 Dynamic dropdown generation
 Automatic country flag rendering
 
-Examples:
+Examples
 
 USD → US
 INR → IN
@@ -57,8 +87,17 @@ currency-converter/
 
 🎯 Purpose
 
-This project is built for learning and portfolio demonstration, showcasing:
+This project was built for learning and portfolio demonstration, showcasing:
 Real-world API integration
 Asynchronous JavaScript usage
-Clean UI design
-Practical frontend development skills
+Dynamic UI updates
+Clean and responsive frontend design
+Practical problem-solving skills
+
+📌 Project Status
+
+✔ Completed
+✔ Actively maintained for learning improvements
+
+📄 License
+This project is open-source and available for educational and personal use.
