@@ -258,7 +258,7 @@ Passionate about building scalable web applications, modern user interfaces, API
 
 ### Connect With Me
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/mohammadnaveed1701-source
 
 LinkedIn: https://www.linkedin.com/in/mohammad-naveed-5294b2333/
 
