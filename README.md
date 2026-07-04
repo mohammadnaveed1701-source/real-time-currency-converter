@@ -4,7 +4,7 @@ A modern web application that provides real-time currency conversion using live 
 
 ## 🚀 Live Demo
 
-**Website:** https://realmoneyconverter.netlify.app/
+**Website:** https://real-time-currency-converter-rosy.vercel.app/
 
 ---
 
