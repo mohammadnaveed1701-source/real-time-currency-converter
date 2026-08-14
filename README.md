@@ -493,7 +493,7 @@ Passionate about building modern and scalable web applications while continuousl
 
 ### GitHub
 
-https://github.com/mohammadnaveed1701-source
+https://github.com/mdnav
 
 ### LinkedIn
 
